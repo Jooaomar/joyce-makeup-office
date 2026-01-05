@@ -1,26 +1,42 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand Colors */
+  --background: #FDF2F4; /* Soft Pink Background */
+  --foreground: #4A4A4A; /* Soft Black Text */
+  --primary: #D48C9A; /* Dusty Pink Accent */
+  --primary-foreground: #FFFFFF;
+  --secondary: #FFFFFF;
+  --secondary-foreground: #D48C9A;
+  
+  /* Additional UI Colors */
+  --muted: #F5E6E8;
+  --border: #E8CFD5;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-lato);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* Remove dark mode for now to enforce the brand aesthetic */
+/* @media (prefers-color-scheme: dark) { ... } */
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
 }
