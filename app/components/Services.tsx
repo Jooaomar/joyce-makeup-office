@@ -5,25 +5,19 @@ const services = [
     icon: Sparkles,
     title: "Maquiagem Social",
     description: "Perfeita para convidadas, formandas e madrinhas. Realce sua beleza com durabilidade e elegância.",
-    price: "A partir de R$ 150",
+    price: "Por apenas R$ 70,00",
   },
   {
     icon: Heart,
     title: "Noivas",
     description: "Atendimento exclusivo e personalizado para o seu grande dia. Teste, acompanhamento e produção completa.",
-    price: "Consulte",
-  },
-  {
-    icon: Camera,
-    title: "Ensaios Fotográficos",
-    description: "Maquiagem específica para fotografia, com acabamento HD e contornos estratégicos.",
-    price: "A partir de R$ 200",
+    price: "Por apenas R$ 85,00",
   },
   {
     icon: Brush,
     title: "Curso de Automake",
     description: "Aprenda a se maquiar com técnicas profissionais adaptadas ao seu gosto e formato de rosto.",
-    price: "A partir de R$ 250",
+    price: "Por apenas R$ 100,00",
   },
 ];
 
@@ -37,7 +31,7 @@ export function Services() {
           <div className="w-24 h-1 bg-primary/20 mx-auto rounded-full" />
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}

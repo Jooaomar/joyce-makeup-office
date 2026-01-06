@@ -26,10 +26,9 @@ export function GalleryCarousel() {
     // { src: "/images/joyce-foto.jpg", alt: "Joyce Silva" },
     { src: "/images/marca.jpg", alt: "Logotipo Joyce Silva" },
     // Placeholder for more work
-    { src: "/images/glamorous-evening-makeup.jpg", alt: "Glamorous Evening Makeup" },
-    { src: "/images/natural-daytime-makeup.jpg", alt: "Natural Evening Makeup" },
-    { src: "/images/photoshoot-professional-makeup.jpg", alt: "Photoshoot Professional Makeup" },
-    { src: "/images/bridal-makeup-before-after.jpg", alt: "Bridal Makeup Before After" },
+    { src: "/images/modelo1.jpeg", alt: "Glamorous Evening Makeup" },
+    { src: "/images/modelo2.jpeg", alt: "Natural Evening Makeup" },
+    { src: "/images/modelo3.jpeg", alt: "Photoshoot Professional Makeup" },
   ];
 
   return (
